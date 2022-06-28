@@ -32,12 +32,12 @@ import lombok.Setter;
     @NamedQuery(
             name = "negotiation.count",
             query = "SELECT COUNT(n) FROM Negotiation AS n"),
-    @NamedQuery(
+/*  @NamedQuery(
             name = "negotiation.getAllMine",
             query = "SELECT n FROM Negotiation AS n WHERE n.company = : company ORDER BY n.id DESC"),
     @NamedQuery(
             name = "negotiation.countAllMine",
-            query =  "SELECT COUNT(n) FROM Negotiation AS n WHERE n.company = : company")
+            query =  "SELECT COUNT(n) FROM Negotiation AS n WHERE n.company = : company")*/
 })
 
 @Getter //全てのクラスフィールドについてgetterを自動生成する(Lombok)
