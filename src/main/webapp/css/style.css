@@ -162,3 +162,24 @@ pre {
 h3 {
     font-size: larger;
 }
+
+table#negotiation_list th {
+    font-weight: bold;
+    padding: 10px 2%;
+}
+
+table#negotiation_list .negotiation_name {
+    width: 20%;
+    padding: 10px 2%;
+}
+table#negotiation_list .negotiation_date {
+    width: 20%;
+}
+
+table#negotiation_list .negotiation_title {
+    width: 37%;
+}
+
+table#negotiation_list .negotiation_action {
+    width: 13%;
+}

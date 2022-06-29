@@ -31,7 +31,7 @@ public class NegotiationService extends ServiceBase {
     /**
      * 指定した従業員が作成した日報データの件数を取得し、返却する
      * @param employee
-     * @return 日報データの件数
+     * @return 商談データの件数
      */
     public long countAllMine(EmployeeView employee) {
 
@@ -49,7 +49,7 @@ public class NegotiationService extends ServiceBase {
      */
     public List<NegotiationView> getAllPerPage(int page) {
 
-        List<Negotiation> negotiations = em.createNamedQuery(JpaConst.Q_REP_GET_ALL, Negotiation.class)
+        List<Negotiation> negotiations = em.createNamedQuery("negotiation.getAll", Negotiation.class)
                 .setFirstResult(JpaConst.ROW_PER_PAGE * (page - 1))
                 .setMaxResults(JpaConst.ROW_PER_PAGE)
                 .getResultList();
@@ -57,11 +57,11 @@ public class NegotiationService extends ServiceBase {
     }
 
     /**
-     * 日報テーブルのデータの件数を取得し、返却する
+     * 商談テーブルのデータの件数を取得し、返却する
      * @return データの件数
      */
     public long countAll() {
-        long negotiations_count = (long) em.createNamedQuery(JpaConst.Q_REP_COUNT, Long.class)
+        long negotiations_count = (long) em.createNamedQuery("negotiation.count", Long.class)
                 .getSingleResult();
         return negotiations_count;
     }
@@ -95,7 +95,7 @@ public class NegotiationService extends ServiceBase {
 
     /**
      * 画面から入力された日報の登録内容を元に、商談データを更新する
-     * @param rv 日報の更新内容
+     * @param rv 商談の更新内容
      * @return バリデーションで発生したエラーのリスト
      */
     public List<String> update(NegotiationView nv) {
@@ -126,8 +126,8 @@ public class NegotiationService extends ServiceBase {
     }
 
     /**
-     * 日報データを1件登録する
-     * @param rv 日報データ
+     * 商談データを1件登録する
+     * @param nv 商談データ
      */
     private void createInternal(NegotiationView nv) {
 
@@ -138,8 +138,8 @@ public class NegotiationService extends ServiceBase {
     }
 
     /**
-     * 日報データを更新する
-     * @param rv 日報データ
+     * 商談データを更新する
+     * @param nv 商談データ
      */
     private void updateInternal(NegotiationView nv) {
 
