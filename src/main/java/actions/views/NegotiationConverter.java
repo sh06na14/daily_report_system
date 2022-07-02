@@ -72,8 +72,8 @@ public class NegotiationConverter {
     public static void copyViewToModel(Negotiation n, NegotiationView nv) {
         n.setId(nv.getId());
         n.setEmployee(EmployeeConverter.toModel(nv.getEmployee()));
-        n.setNegotiationDate(nv.getNegotiationDate());
         n.setCompany(nv.getCompany());
+        n.setNegotiationDate(nv.getNegotiationDate());
         n.setTitle(nv.getTitle());
         n.setContent(nv.getContent());
         n.setCreatedAt(nv.getCreatedAt());

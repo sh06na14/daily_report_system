@@ -19,7 +19,7 @@
         <table id="negotiation_list">
             <tbody>
                 <tr>
-                    <th class="negotiation_name">会社</th>
+                    <th class="report_name">会社</th>
                     <th class="negotiation_date">日付</th>
                     <th class="negotiation_title">タイトル</th>
                     <th class="negotiation_action">操作</th>
@@ -38,8 +38,8 @@
         </table>
 
         <div id="pagination">
-            （全 ${reports_count} 件）<br />
-            <c:forEach var="i" begin="1" end="${((reports_count - 1) / maxRow) + 1}" step="1">
+            （全 ${negotiations_count} 件）<br />
+            <c:forEach var="i" begin="1" end="${((negotiations_count - 1) / maxRow) + 1}" step="1">
                 <c:choose>
                     <c:when test="${i == page}">
                         <c:out value="${i}" />&nbsp;
@@ -50,7 +50,7 @@
                 </c:choose>
             </c:forEach>
         </div>
-        <p><a href="<c:url value='?action=${ACT_Negotiation}&command=${commNew}' />">新規商談の登録</a></p>
+        <p><a href="<c:url value='?action=${actNegotiation}&command=${commNew}' />">新規商談の登録</a></p>
 
     </c:param>
 </c:import>
