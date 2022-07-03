@@ -49,7 +49,7 @@ public enum AttributeConst {
     REP_TITLE("title"),
     REP_CONTENT("content"),
 
-  //商談管理
+  //商談管理 追加
     Negotiation("negotiation"),
     Negotiations("negotiations"),
     Negotiation_COUNT("negotiations_count"),
