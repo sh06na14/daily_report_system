@@ -12,7 +12,6 @@ public enum ForwardConst {
     ACT_REP("Report"),
     ACT_AUTH("Auth"),
 
-    ACT_Company("Company"),//追加
     ACT_Negotiation("Negotiation"),//追加
 
     //command
@@ -42,10 +41,6 @@ public enum ForwardConst {
     FW_REP_SHOW("reports/show"),
     FW_REP_NEW("reports/new"),
     FW_REP_EDIT("reports/edit"),
-
-    FW_Company_INDEX("companys/index"),//追加
-    FW_Company_SHOW("companys/show"),//追加
-    FW_Company_NEW("companys/new"),//追加
 
     FW_Negotiation_INDEX("negotiations/index"),//追加
     FW_Negotiation_SHOW("negotiations/show"),//追加

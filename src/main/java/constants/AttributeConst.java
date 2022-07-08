@@ -32,13 +32,6 @@ public enum AttributeConst {
     EMP_NAME("name"),
     EMP_ADMIN_FLG("admin_flag"),
 
-    COMPANY("company"),
-    COMPANYS("companys"),
-    COMPANYS_COUNT("companys_count"),
-    COMPANY_ID("id"),
-    COMPANY_CODE("code"),
-    COMPANY_COMPANY("company"),
-
     //管理者フラグ
     ROLE_ADMIN(1),
     ROLE_GENERAL(0),
