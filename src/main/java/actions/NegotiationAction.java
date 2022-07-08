@@ -44,8 +44,8 @@ public class NegotiationAction extends ActionBase {
         //全日報データの件数を取得
         long negotiationsCount = service.countAll();
 
-        putRequestScope(AttributeConst.Negotiations, negotiations); //取得した日報データ
-        putRequestScope(AttributeConst.Negotiation_COUNT, negotiationsCount); //全ての日報データの件数
+        putRequestScope(AttributeConst.Negotiations, negotiations); //取得した商談データ
+        putRequestScope(AttributeConst.Negotiation_COUNT, negotiationsCount); //全ての商談データの件数
         putRequestScope(AttributeConst.PAGE, page); //ページ数
         putRequestScope(AttributeConst.MAX_ROW, JpaConst.ROW_PER_PAGE); //1ページに表示するレコードの数
 

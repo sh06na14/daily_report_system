@@ -10,7 +10,7 @@
 <c:import url="/WEB-INF/views/layout/app.jsp">
     <c:param name="content">
 
-        <h2>日報 詳細ページ</h2>
+        <h2>商談 詳細ページ</h2>
 
         <table>
             <tbody>

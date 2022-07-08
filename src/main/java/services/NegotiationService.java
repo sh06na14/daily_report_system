@@ -13,7 +13,7 @@ import models.validators.NegotiationValidator;
 
 public class NegotiationService extends ServiceBase {
     /**
-     * 指定した従業員が作成した商談データを、指定されたページ数の一覧画面に表示する分取得しReportViewのリストで返却する
+     * 指定した従業員が作成した商談データを、指定されたページ数の一覧画面に表示する分取得しNegotiationViewのリストで返却する
      * @param employee 従業員
      * @param page ページ数
      * @return 一覧画面に表示するデータのリスト
@@ -29,7 +29,7 @@ public class NegotiationService extends ServiceBase {
     }
 
     /**
-     * 指定した従業員が作成した日報データの件数を取得し、返却する
+     * 指定した従業員が作成した商談データの件数を取得し、返却する
      * @param employee
      * @return 商談データの件数
      */
@@ -43,7 +43,7 @@ public class NegotiationService extends ServiceBase {
     }
 
     /**
-     * 指定されたページ数の一覧画面に表示する日報データを取得し、NegotiationViewのリストで返却する
+     * 指定されたページ数の一覧画面に表示する商談データを取得し、NegotiationViewのリストで返却する
      * @param page ページ数
      * @return 一覧画面に表示するデータのリスト
      */
@@ -149,6 +149,5 @@ public class NegotiationService extends ServiceBase {
         em.getTransaction().commit();
 
     }
-
 
 }

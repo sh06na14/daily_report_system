@@ -34,10 +34,10 @@ import lombok.Setter;
             query = "SELECT COUNT(n) FROM Negotiation AS n"),
     @NamedQuery(
             name = "negotiation.getAllMine",
-            query =  "SELECT n FROM Negotiation AS n WHERE n.employee = :" +  "employee" + " ORDER BY n.id DESC"),
+            query =  "SELECT n FROM Negotiation AS n WHERE n.employee = :employee ORDER BY n.id DESC"),
     @NamedQuery(
             name = "negotiation.countAllMine",
-            query =  "SELECT COUNT(n) FROM Negotiation AS n WHERE n.employee = :" +  "employee")
+            query =  "SELECT COUNT(n) FROM Negotiation AS n WHERE n.employee = :employee"),
 })
 
 @Getter //全てのクラスフィールドについてgetterを自動生成する(Lombok)
@@ -65,7 +65,7 @@ public class Negotiation {
      * 会社
      */
     @Column(name = "company", nullable = false)
-    private String Company;
+    private String company;
 
     /**
      * いつの日報かを示す日付

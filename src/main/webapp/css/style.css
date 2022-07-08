@@ -183,3 +183,14 @@ table#negotiation_list .negotiation_title {
 table#negotiation_list .negotiation_action {
     width: 13%;
 }
+
+table#company_list th {
+    width: 30%;
+    padding: 10px 2%;
+}
+
+table#company_list td {
+    width: 29%;
+    padding: 10px 2%;
+}
+
